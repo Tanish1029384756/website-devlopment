@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+     .box1{
+     background-color:beige;
+     position:static;
+     width:400px;
+     height:400px;
+     left:300px;
+     }
+     .box2{
+     background-color:rgb(220, 237, 245);
+     position:fixed;
+     width:400px;
+     height:400px;
+     left:900px;
+     }
+     .box3{
+     background-color:beige;
+     width:400px;
+     height:400px;
+     
+     }
+     .child{
+        background-color:blue;
+        width:100px;
+        height:100px;
+        position: relative;
+        left:50px;
+        bottom:30px;
+     }
+     .box4{
+     background-color:rgb(116, 10, 230);
+     width:400px;
+     height:400px;
+     
+     }
+     .cchild{
+        background-color:blue;
+        width:100px;
+        height:100px;
+        position: absolute;
+        left:50px;
+        bottom:30px;
+     }
+    
+     </style>
+    </head>
+    <body>
+        <div class="box1">static position</div>
+        <div class="box2">fixed position</div>
+        <div class="box3">relative position
+            parent
+            <div class="child">child position</div>
+        </div>
+         <div class="box4">absolute position
+            parent
+            <div class="cchild">child position</div>
+        </div>
+    </body>
+</html>
